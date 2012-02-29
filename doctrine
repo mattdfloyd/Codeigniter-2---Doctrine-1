@@ -1,0 +1,12 @@
+#!/usr/bin/env php
+<?php
+
+	define('BASEPATH','.'); 
+
+	chdir(dirname(__FILE__));
+	require_once('libraries/Doctrine.php'); 
+
+	$setup = new Doctrine();
+	$setup->setUpCommandLine();
+	
+?>
